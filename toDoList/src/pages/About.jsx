@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function About() {
     return (
       <div className="list-container">
@@ -16,7 +18,7 @@ function About() {
           -
         </p>
         For Web Development Full Time class of January 2025 💟
-        Made by Sergio Llorens and Olga ML
+        Made by <Link to="https://github.com/sllorens-cuenca" className="link-text">Sergio Llorens</Link> and <Link to="https://github.com/omleche" className="link-text">Olga ML</Link>
       </div>
     );
   }

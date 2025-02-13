@@ -1,14 +1,23 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+
 
 function ListItem(props) {
-    console.log(props   )
+    console.log(props )
+
     return (
         <div className="list-item">
+            <div className="list-text">
             {/* <p>{props.listDetails.completed ? "✅" : "❌"} {props.listDetails.task}</p> */}
-
-            <span > {props.listDetails.completed ? "✅" : "❌"}  </span>
-            <span className={props.listDetails.completed ? 'completed' : ''}>{props.listDetails.task}</span>
+            <p > {props.listDetails.completed ? "✅" : "❌"}  </p>
+            <p className={props.listDetails.completed ? 'completed' : ''}>{props.listDetails.task}</p>
+            <Link className="icon" to={`/taskDetails/${props.listDetails.id}`}>
+                    <button><FontAwesomeIcon icon={faPencil} size="lg" color="#3498db"/></button>
+            </Link>
+            </div>
             <div>
-                
+
                 <button className="delete" onClick={() => { 
                     props.callbackToDelete(props.listDetails.id)
                 
@@ -20,6 +29,7 @@ function ListItem(props) {
                  }}>
                     Checked
                 </button>
+                
 
 
             </div>

@@ -22,7 +22,7 @@ function AddNewTask(props) {
     }
 
     return (
-        <div >
+        <div  >
              {/* form */}
              <form className="form-box" onSubmit={handleSubmit} >
 

@@ -45,6 +45,15 @@ p{
   text-wrap: wrap;
 }
 
+.icon{
+ border: 0;
+ padding: 0;
+ background-color: transparent;
+}
+.icon:hover{
+  size: 20px;
+}
+
 button {
   padding: 1rem;
   color: white;
@@ -62,14 +71,22 @@ button.delete {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-right: 15px;
+  
+}
+button.delete:hover{
+  background-color: #c81502;
+
 }
 button.complete {
-  background-color: #148001;
+  background-color: #1aa003;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+button.complete:hover{
+  background-color: #148001;
 }
 button.add {
   padding: 0.8rem 1.5rem;
@@ -80,6 +97,36 @@ button.add {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+button.add:hover{
+  background-color: #0171bb;
+
+}
+.link-btn{
+  background-color: #1aa003;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+.link-btn:hover{
+  font-size: 18px;
+  background-color: #148001;
+}
+.link-text{
+  font-size: 18px;
+  text-wrap: wrap;
+  padding: 0;
+  border: 0;
+}
+.link-text:hover{
+  font-size: 18px;
+  text-wrap: wrap;
+  padding: 0;
+}
+
+
 
 .nav-bar {
   width: 100%;
@@ -123,6 +170,7 @@ button.add {
   
 }
 .list-container{
+  margin-top: 200px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -141,6 +189,10 @@ button.add {
   color:#0D1B2A;
   transition: transform 0.2s ease;
 
+}
+.list-text{
+  display: flex;
+  align-items: center;
 }
 
 .form-box {
